@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>count down</title>
+  </head>
+  <body>
+    <h1>Count Down Timer</h1>
+    <div class="box" id="main-box">
+      <div class="box__item">
+        <div class="box__number" id="minutes">00</div>
+      </div>
+      <div class="box__item">
+        <div class="box__number" id="seconds">00</div>
+      </div>
+    </div>
+
+    <div class="btn">
+      <button class="btn__func" id="btn_stop" onclick="stop()">STOP</button>
+      <button class="btn__func" id="btn_start" onclick="start()">START</button>
+      <button class="btn__func" id="btn_reset" onclick="reset()">RESET</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
